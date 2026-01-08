@@ -1,7 +1,5 @@
-# PDF Data Extraction Agent
+# PDF Invoice Processing Agent
 
-Data extraction agent to extract data found in a PDF provided by the user into a more structured CSV or JSON file. The agent looks to determine the output schema itself before doing any extraction, with input from the user to guide it.
+The agent is able to process the uploaded invoice pdf by extracting the data and saving it to a structured csv file.
 
-Builds on data extraction agent used in demo at 2025 USOPC Performance Innovation Summit. 
-# invoice-processing-agent
-# invoice-processing-agent
+It has business rules for processing the invoice data.
