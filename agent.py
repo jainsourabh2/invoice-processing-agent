@@ -3,16 +3,16 @@ from google.adk.apps import App
 from google.adk.plugins.save_files_as_artifacts_plugin import SaveFilesAsArtifactsPlugin
 from google.adk.tools import FunctionTool, ToolContext
 
-import pathlib
-from google.oauth2.credentials import Credentials
-from googleapiclient.discovery import build
-from google_auth_oauthlib.flow import InstalledAppFlow
+# import pathlib
+# from google.oauth2.credentials import Credentials
+# from googleapiclient.discovery import build
+# from google_auth_oauthlib.flow import InstalledAppFlow
 
-import asyncio
-from email.message import EmailMessage
-from email import message_from_bytes
+# import asyncio
+# from email.message import EmailMessage
+# from email import message_from_bytes
 
-from base64 import urlsafe_b64decode
+# from base64 import urlsafe_b64decode
 
 from datetime import datetime
 
@@ -23,7 +23,7 @@ from google import genai
 from google.genai import types
 
 import base64
-
+import vertexai
 import json
 import numpy as np
 import pandas as pd
@@ -34,6 +34,7 @@ GOOGLE_GENAI_USE_VERTEXAI = os.getenv('GOOGLE_GENAI_USE_VERTEXAI')
 GOOGLE_CLOUD_PROJECT = os.getenv('GOOGLE_CLOUD_PROJECT')
 GOOGLE_CLOUD_LOCATION = os.getenv('GOOGLE_CLOUD_LOCATION')
 GEMINI_MODEL_ID = os.getenv('GEMINI_MODEL_ID')
+STAGING_BUCKET = os.getenv("GOOGLE_CLOUD_STAGING_BUCKET")  
 
 KEYFILE_PATH = os.getcwd() + "/invoiceprocessing/credentials/gcp-oauth.keys.json"
 GMAIL_CREDENTIALS_PATH = os.getcwd() + "/invoiceprocessing/credentials/.gmail-server-credentials.json"

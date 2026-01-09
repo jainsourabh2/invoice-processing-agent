@@ -3,6 +3,3 @@ google-genai>=1.39.0
 pandas
 python-dotenv
 numpy
-google-auth 
-google-auth-oauthlib 
-google-api-python-client 
