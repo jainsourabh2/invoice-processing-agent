@@ -1,0 +1,1 @@
+adk deploy agent_engine --project project-id --region us-central1 ./invoice-processing-agent/
